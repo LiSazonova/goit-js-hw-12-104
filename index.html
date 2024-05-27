@@ -7,31 +7,19 @@
     <title>Gallery</title>
     
     <script type="module" crossorigin src="/goit-js-hw-11-104/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11-104/assets/vendor-8c59ed88.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11-104/assets/vendor-ee72e1a4.js">
     <link rel="stylesheet" href="/goit-js-hw-11-104/assets/vendor-1cd1f9d9.css">
-    <link rel="stylesheet" href="/goit-js-hw-11-104/assets/index-76bc6039.css">
+    <link rel="stylesheet" href="/goit-js-hw-11-104/assets/index-d27b0d87.css">
   </head>
   <body>
-    <!-- <form class="form">
-      <input
-        class="search-img-input"
-        type="text"
-        placeholder="Search images..."
-        name="search-img-input"
-      />
-      <button class="submit-btn" type="submit">Search</button>
-    </form>
-      <div class="loader" id="loader" style="display: none;"></div>
-    <div class="container">
-      <ul class="gallery"></ul>
-    </div> -->
     <form class="form">
       <input type="text" name="query" placeholder="Search images..." />
       <button type="submit">Search</button>
     </form>
-    <div class="loader"></div>
     <div class="container">
       <ul class="images-container"></ul>
+      <button class="load-more" style="display: none">Load more</button>
+      <div class="loader" style="display: none"></div>
     </div>
 
     
