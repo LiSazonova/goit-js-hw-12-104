@@ -28,7 +28,7 @@ export function renderImages(images) {
         )
         .join('');
 
-    imagesList.innerHTML = imageMarkup;
+    imagesList.insertAdjacentHTML('beforeend', imageMarkup);
 }
 
 export function initializeLightbox() {
