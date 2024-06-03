@@ -70,6 +70,14 @@ loadMoreButton.addEventListener('click', async () => {
                 loadMoreButton.style.display = 'none';
             }
         }
+
+        const card = document.querySelector(".gallery-item");
+        const cardHeight = card.getBoundingClientRect().height * 2;
+        window.scrollBy({
+            left: 0,
+            top: cardHeight,
+            behavior: "smooth"
+        })
     } catch (error) {
         iziToast.error({
             message: 'An error occurred while fetching images. Please try again later.',
